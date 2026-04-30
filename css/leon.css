@@ -373,6 +373,35 @@ html {
   border-color: #10cab7;
   display: inline-block;
 }
+
+@media (max-width: 991px) {
+  .about .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .about .about-content .image {
+    margin: 0 auto 60px;
+  }
+}
+
+@media (max-width: 991px) {
+  .about .about-content .image::before,
+  .about .about-content .image::after {
+    display: none;
+  }
+}
+
+/* @media (max-width: 767px) {
+  .about .about-content .text {
+    flex-basis: content;
+    margin-top: 120px;
+    text-align: center;
+  }
+} */
+
 /* end about */
 /* start contact */
 .contact {
